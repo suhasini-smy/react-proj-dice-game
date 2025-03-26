@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import { Button } from "./Button";
+import { Button } from "../styled/Button";
 
-const StartGame = () => {
+const StartGame = ({ toggle }) => {
   return (
     <Container>
       <img src="/images/dices_1.png" />
       <div className="content">
         <h1>Dice Game</h1>
-        <Button>Play Now</Button>
+        <Button onClick={toggle}>Play Now</Button>
       </div>
     </Container>
   );
